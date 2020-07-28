@@ -1,7 +1,7 @@
 REPOSITORY=/opt/application
 cd $REPOSITORY
 
-APP_NAME=서밑까제
+APP_NAME=demo
 JAR_NAME=$(ls $REPSOITORY/build/libs/ | grep '.jar' | tail -n 1)
 JAR_PATH=$REPOSITORY/build/libs/JAR_NAME
 
