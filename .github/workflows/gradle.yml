@@ -7,7 +7,7 @@ on:
 
 name: Deploy Spring boot to Amazon EC2
 env:
-  PROJECT_NAME: action_codedeploy
+  PROJECT_NAME: 서밑까제
 
 jobs:
   build:
