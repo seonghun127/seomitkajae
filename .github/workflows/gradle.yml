@@ -40,7 +40,7 @@ jobs:
         aws-region: ap-northeast-2
         
     - name: Upload to S3
-      run: aws s3 cp --region ap-northeast-2 ./$GITHUB_SHA.zip s3://ksh-test/$PROJECT_NAME/$GITH"UB_SHA.zip
+      run: aws s3 cp --region ap-northeast-2 ./$GITHUB_SHA.zip s3://ksh-test/$PROJECT_NAME/$GITHUB_SHA.zip
     
     - name: Deploy Code
       run: aws deploy create-deployment --application-name ksh-test --deployment-config-name CodeDeployDefault.AllAtOnce --deployment-group-name ksh-test -s3-location bucket=ksh-test,bundleType=zip,key=$PROJECT_NAME/$GITHUB_SHA.zip
