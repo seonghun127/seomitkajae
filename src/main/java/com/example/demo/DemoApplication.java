@@ -19,6 +19,6 @@ public class DemoApplication {
 
     @GetMapping
     public String healthCheck() {
-        return "ok! this is version 2!!";
+        return "ok! this is version 3!!";
     }
 }
