@@ -18,7 +18,12 @@ public class DemoApplication {
 
 
     @GetMapping
-    public String healthCheck() {
+    public String index() {
         return "ok! this is version 3!!";
+    }
+
+    @GetMapping("/health")
+    public String healthCheck() {
+        return "ok";
     }
 }
